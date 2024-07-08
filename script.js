@@ -1,3 +1,16 @@
+function dotMove() {
+    var cursorMove = document.querySelector('.mouse-dot');
+
+    window.addEventListener('mousemove', function(dets){
+        gsap.to(cursorMove, {
+            x: dets.x,
+            y: dets.y,
+            duration: .7,
+            ease: 'back.out',
+        })
+    }) 
+}
+
 function headerAnimation() {
     var header = gsap.timeline();
 
@@ -39,6 +52,13 @@ function headerAnimation() {
         stagger: .1,
     })
 }
+
+gsap.to('.single-marquee', {
+    x: '100%',
+    duration: 1,
+    delay: .5,
+    repeat: -1,
+})
 
 function serviceAnimation() {
     var service = gsap.timeline({
@@ -94,6 +114,8 @@ function serviceAnimation() {
         duration: .8,
     }, 'third-row')
 }
+
+dotMove();
 
 headerAnimation();
 
