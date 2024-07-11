@@ -83,7 +83,7 @@ img {
 }
 
 .hero-area h1 {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .hero-area p {
@@ -192,4 +192,16 @@ img {
 .single-service.service-black .service-btn span {
     color: #333;
     background-color: #fff;
+}
+
+.case-section {
+    padding: 0 0 120px;
+}
+
+.all-cases {
+    margin-top: 50px;
+}
+
+h2.section-title2 {
+    font-size: 80px;
 }
